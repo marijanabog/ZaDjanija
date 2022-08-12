@@ -11,15 +11,55 @@ Console.WriteLine("Hello,Djani");
 
 //Console.WriteLine($"Nice to meet you {firstName} {lastName}!");
 
-Console.WriteLine("Enter a value: ");
-int max = int.Parse(Console.ReadLine());
-int i = 0;
+//Console.WriteLine("Enter a value: ");
+//int max = int.Parse(Console.ReadLine());
+//int i = 0;
 
 
-    while (i < max) 
-    { 
-        Console.WriteLine(i);
-    i++; 
+//    while (i < max) 
+//    { 
+//        Console.WriteLine(i);
+//    i++; 
+//}
+
+//Console.WriteLine("Loop finished!");
+
+static void printEvenNumbers()
+{
+    for (int i = 0; i < 100; i++)
+    {
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+        }
+    }
 }
 
-Console.WriteLine("Loop finished!");
+static void printOddNumbers()
+{
+    for (int i = 0; i < 100; i++)
+    {
+        if (i % 2 != 0)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
+
+Console.WriteLine("Coose an even or odd number:"); 
+string UserImput = Console.ReadLine();
+
+
+if (UserImput == "even")
+{
+    printEvenNumbers();
+}
+else if (UserImput == "odd")
+{
+    printOddNumbers();
+}
+else
+{
+    Console.WriteLine("invalid selection");
+}
+
