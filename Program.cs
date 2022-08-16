@@ -94,15 +94,18 @@ string UserImput = Console.ReadLine();
 static void PrintEvenNumbers()
 {
     int Sum = 0;
+    int TotalNumber=0;
+
     for (int i = 0; i < 100; i++) 
     {
         if (i % 2 == 0) 
         {
             Console.WriteLine(Sum/2);
-
-
+            Sum = Sum + i;
+            TotalNumber++; 
         }
     }
+    Console.WriteLine(Sum/TotalNumber); 
 }
 
 static void PrintOddNumbers()
@@ -120,7 +123,7 @@ static void PrintOddNumbers()
         }
 
     }
-    Console.WriteLine(Sum/TotalNumber);
+    Console.WriteLine(Sum/TotalNumber);        
 
 }
 //static void SumOddNumbers()
