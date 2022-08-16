@@ -24,42 +24,121 @@ Console.WriteLine("Hello,Djani");
 
 //Console.WriteLine("Loop finished!");
 
-static void printEvenNumbers()
+//static void printEvenNumbers()
+//{
+//    for (int i = 0; i < 100; i++)
+//    {
+//        if (i % 2 == 0)
+//        {
+//            Console.WriteLine(i);
+//        }
+//    }
+//}
+
+//static void printOddNumbers()
+//{
+//    for (int i = 0; i < 100; i++)
+//    {
+//        if (i % 2 != 0)
+//        {
+//            Console.WriteLine(i);
+//        }
+//    }
+//}
+
+Console.WriteLine("Coose an even or odd number:");
+string UserImput = Console.ReadLine();
+
+
+//if (UserImput == "even")
+//{
+//    printEvenNumbers();
+//}
+//else if (UserImput == "odd")
+//{
+//    printOddNumbers();
+//}
+//else
+//{
+//    Console.WriteLine("invalid selection");
+//}
+
+
+
+//static void printEvenNumbers()
+//{
+//    int Sum = 0;
+//    for (int i = 0; i < 100; i++)
+//    {
+//        if (i % 2 == 0)
+//        {
+//            Sum = Sum + i;
+//         }
+//    }
+//    Console.WriteLine(Sum/2);
+//}
+
+//static void printOddNumbers()
+//{
+//    for (int i = 0; i < 100; i++)
+//    {
+//        if (i % 2 != 0)
+//        {
+//            Console.WriteLine(i);
+//        }
+//    }
+//}
+
+
+
+static void PrintEvenNumbers()
 {
-    for (int i = 0; i < 100; i++)
+    int Sum = 0;
+    for (int i = 0; i < 100; i++) 
     {
-        if (i % 2 == 0)
+        if (i % 2 == 0) 
         {
-            Console.WriteLine(i);
+            Console.WriteLine(Sum/2);
+
+
         }
     }
 }
 
-static void printOddNumbers()
+static void PrintOddNumbers()
 {
+    int Sum = 0;
+    int TotalNumber = 0;
+
     for (int i = 0; i < 100; i++)
     {
         if (i % 2 != 0)
         {
             Console.WriteLine(i);
+            Sum = Sum + i;
+            TotalNumber++; 
         }
+
     }
+    Console.WriteLine(Sum/TotalNumber);
+
 }
+//static void SumOddNumbers()
+//{
+//    PrintOddNumbers();
+//};
 
-Console.WriteLine("Coose an even or odd number:"); 
-string UserImput = Console.ReadLine();
-
+//SumOddNumbers();
 
 if (UserImput == "even")
 {
-    printEvenNumbers();
+    PrintEvenNumbers(); 
 }
 else if (UserImput == "odd")
 {
-    printOddNumbers();
+    PrintOddNumbers();
 }
 else
 {
     Console.WriteLine("invalid selection");
 }
-
